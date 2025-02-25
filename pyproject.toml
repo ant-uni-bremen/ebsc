@@ -3,12 +3,10 @@ requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "example_package"
-authors = [
-  { name="Example Author", email="author@example.com" },
-]
+name = "ebsc"
+authors = [{ name = "Christopher Willuweit", email = "willuweit@ant.uni-bremen.de" }, { name = "Johannes Königs", email = "koenigs@ant.uni-bremen.de" }]
 license = { file = "LICENSE" }
-description = "A small example package"
+description = " Library for Event Based Sampling and Rekonstruction Methods "
 readme = "README.md"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -17,7 +15,7 @@ requires-python = ">=3.10"
 dynamic = ["version", "dependencies"]
 
 [project.urls]
-Source = "https://github.com/USERNAME/example_package/"
+Source = "https://github.com/ant-uni-bremen/ebsc/"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
@@ -27,6 +25,6 @@ version = { attr = "setuptools_scm.get_version" }
 dependencies = { file = ["requirements.txt"] }
 
 [tool.setuptools_scm]
-write_to = "src/example_package/_version.py"
+write_to = "src/ebsc/_version.py"
 version_scheme = "guess-next-dev"
 local_scheme = "no-local-version"
