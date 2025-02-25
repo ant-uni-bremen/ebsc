@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "example_package"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+license = { file = "LICENSE" }
+description = "A small example package"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.10"
+dynamic = ["version", "dependencies"]
+
+[project.urls]
+Source = "https://github.com/USERNAME/example_package/"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.dynamic]
+version = { attr = "setuptools_scm.get_version" }
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools_scm]
+write_to = "src/example_package/_version.py"
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
