@@ -132,3 +132,6 @@ dmypy.json
 # logs
 *.err
 *.out
+
+# versioning
+*_version.py
