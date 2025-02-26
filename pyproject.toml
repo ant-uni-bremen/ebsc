@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "ebsc"
 authors = [{ name = "Christopher Willuweit", email = "willuweit@ant.uni-bremen.de" }, { name = "Johannes Königs", email = "koenigs@ant.uni-bremen.de" }]
 license = { file = "LICENSE" }
-description = " Library for Event Based Sampling and Rekonstruction Methods "
+description = " Library for Event Based Sampling and Reconstruction Methods "
 readme = "README.md"
 classifiers = [
     "Programming Language :: Python :: 3",
